@@ -1,0 +1,85 @@
+/* Container to center the form */
+.create-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #f0d8e3;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 6%;
+}
+
+header h1 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Form Layout */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #444343;
+  }
+
+  input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+
+    &:focus {
+      outline: none;
+      border-color: #ff0062;
+      box-shadow: 0 0 5px rgba(163, 173, 184, 0.2);
+    }
+  }
+}
+
+/* Row for Age and GPA side-by-side */
+.form-row {
+  display: flex;
+  gap: 15px;
+
+  .half-width {
+    flex: 1;
+  }
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Spreads buttons apart as per wireframe layout concept */
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn-back {
+  background-color: #d86783; /* Grey for Back */
+  color: white;
+}
+
+.btn-create {
+  background-color: #ec0b4f; /* Green for Create */
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,87 @@
+/* General Layout */
+:host {
+  display: block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styling [cite: 57] */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f89ec0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  margin-top: 20%;
+
+  h1 {
+    margin: 0;
+    color: #333;
+    font-size: 1.5rem;
+  }
+}
+
+/* Button Styling (Creative Application) [cite: 21] */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.add-btn {
+  background-color: #f0045e;
+  color: white;
+
+  &:hover {
+    background-color: #ca0f82;
+  }
+}
+
+/* Card Container */
+.student-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Student Card Styling [cite: 61] */
+.student-card {
+  background-color: rgb(233, 197, 209);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex; /* Flexbox for layout engine  */
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+
+  .student-info {
+    h3 {
+      margin: 0 0 5px 0;
+      color: #06080a;
+    }
+
+    p {
+      margin: 0;
+      color: #7f8c8d;
+      font-size: 0.9rem;
+    }
+  }
+
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+
+    &:hover {
+      background-color: #a71d2a;
+    }
+  }
+}

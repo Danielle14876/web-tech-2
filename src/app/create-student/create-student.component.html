@@ -1,0 +1,56 @@
+<div class="create-container">
+  
+  <header>
+    <h1>Create New Student</h1>
+  </header>
+
+  <form>
+    <div class="form-group">
+      <label for="studentId">Student ID</label>
+      <input type="text" id="studentId" placeholder="Enter ID" />
+    </div>
+
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" placeholder="Enter First Name" />
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" placeholder="Enter Last Name" />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="student@example.com" />
+    </div>
+
+    <div class="form-row">
+      <div class="form-group half-width">
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="0" />
+      </div>
+
+      <div class="form-group half-width">
+        <label for="gpa">GPA</label>
+        <input type="number" step="0.1" id="gpa" placeholder="0.0" />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="status">Enrollment Status</label>
+      <select id="status">
+        <option value="enrolled">Enrolled</option>
+        <option value="not-enrolled">Not Enrolled</option>
+        <option value="graduated">Graduated</option>
+      </select>
+    </div>
+
+    <div class="button-group">
+      <button type="button" class="btn-back" (click)="goBack()">Back</button>
+      
+      <button type="submit" class="btn-create">Create Student</button>
+    </div>
+
+  </form>
+</div>
